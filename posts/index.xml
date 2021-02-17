@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 愚者</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on 愚者</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Feb 2021 23:54:21 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用kubeadm升级集群</title>
+      <link>http://localhost:1313/posts/updatebykubeadm/</link>
+      <pubDate>Mon, 15 Feb 2021 23:54:21 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/updatebykubeadm/</guid>
+      <description>1.升级kubeadm 版本(master) ## 升级kubeadm $ yum update -y kubeadm-1.20.2-0 ## 检查可升级到哪些版本，并验证您当前的集群是否可升级 $ kubeadm upgrade plan 查看输出日志可以得知可升级的版本 2.查看所需镜像(master) $ kubeadm</description>
+    </item>
+    
+    <item>
+      <title>Hugo 步骤</title>
+      <link>http://localhost:1313/posts/hugo-install/</link>
+      <pubDate>Tue, 02 Feb 2021 21:24:42 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/hugo-install/</guid>
+      <description>使用Hugo搭建网站步骤 1. 安装 我使用的系统是manjaro，在商店中就可以安装 也可以使用 $ sudo pacman -Syu hugo 2. 生成站点 $ hugo new site mysite 站点目录结构是： . ├── archetypes #储存.md的模板文件，类似于hexo的scaffold</description>
+    </item>
+    
+    <item>
+      <title>Cv</title>
+      <link>http://localhost:1313/posts/cv/</link>
+      <pubDate>Mon, 01 Feb 2021 23:50:05 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/cv/</guid>
+      <description>HELLO WORLD aaa</description>
+    </item>
+    
+  </channel>
+</rss>
