@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2021/05/17/hello-world/"/>
+    <url>/2021/05/17/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>同步源的更新内容</title>
+    <link href="/2021/05/17/%E5%90%8C%E6%AD%A5%E6%BA%90%E7%9A%84%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/"/>
+    <url>/2021/05/17/%E5%90%8C%E6%AD%A5%E6%BA%90%E7%9A%84%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</url>
+    
+    <content type="html"><![CDATA[<h2 id="同步源的更新内容"><a href="#同步源的更新内容" class="headerlink" title="同步源的更新内容"></a>同步源的更新内容</h2><blockquote><p><del><strong>用github网页手动操作的话，会多一条commit</strong></del></p></blockquote><ul><li>给fork配置远程库</li></ul><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs routeros"><span class="hljs-comment">#查看远程状态</span><br>git remote -v<br><br><span class="hljs-comment">#添加一个同步给fork的上游仓库</span><br>git remote <span class="hljs-builtin-name">add</span> upstream 地址<br></code></pre></td></tr></table></figure><ul><li>同步fork</li></ul><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-comment">#从上游仓库 fetch 分支和提交点，提交给本地 master，并会被存储在一个本地分支 upstream/master</span><br>git fetch upstream<br><br><span class="hljs-comment">#切换到本地主分支</span><br>git checkout <span class="hljs-keyword">master</span><br><br><br><span class="hljs-title">#把upstream</span>/<span class="hljs-keyword">master</span> <span class="hljs-title">分支合并到本地master</span>上<br>git merge upstream/<span class="hljs-keyword">master</span><br><br><span class="hljs-title">#更新到github</span>的fork上<br>git push origin <span class="hljs-literal">master</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>github</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
